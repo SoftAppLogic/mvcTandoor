@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v2.10, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/png-flash-logo-198x65-47.png" type="image/x-icon">
+    <meta name="description" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
+    <link rel="stylesheet" href="Content/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/style.css">
+  
+    <link rel="stylesheet" href="Content/mbr-additional.css" type="text/css">
+
+    <link rel="stylesheet" href="Content/bootstrap.css">
+    @*<link rel="stylesheet" href="Content/font-awesome.css">
+    <link rel="stylesheet" href="Content/templatemo_style.css">
+    <link rel="stylesheet" href="Content/templatemo_misc.css">
+    <link rel="stylesheet" href="Content/flexslider.css">
+    <link rel="stylesheet" href="Content/testimonails-slider.css">*@
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
+    <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse" id="menu-5">
+        <div class="mbr-navbar__section mbr-section">
+            <div class="mbr-section__container container">
+                <div class="mbr-navbar__container">
+                    <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                        <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+                            <span class="mbr-brand__logo"><a href="#top"><img src="images/png-flash-logo-198x65-47.png" class="mbr-navbar__brand-img mbr-brand__img" alt="Tandoor Restaurant"></a></span>
+
+                        </span>
+                    </div>
+                    <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
+                    <div class="mbr-navbar__column mbr-navbar__menu">
+                        <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                            <div class="mbr-navbar__column">
+                                <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active mbr-buttons--only-links">
+                                    <li class="mbr-navbar__item">
+                                        <a class="mbr-buttons__link btn text-warning" href="#top">HOME</a>
+                                    </li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="#">ABOUT</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="#">SERVICE</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="#">MENUS</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="#">ORDER ONLINE</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="#reservation">RESERVATION</a></li>
+                                    <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="#contacts1-3">CONTACT US</a></li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container body-content">
+        @RenderBody()
+        @*<hr />*@
+
+        <footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-5" style="background-color: rgb(68, 68, 68);">
+
+            <div class="mbr-section__container container">
+                <div class="mbr-footer mbr-footer--wysiwyg row" style="padding-top: 36px; padding-bottom: 24.6px;">
+                    <div class="col-sm-12">
+                        <p class="mbr-footer__copyright">Copyright (c) 2016 Tandoor Restaurant&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        @*<footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>*@
+        
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

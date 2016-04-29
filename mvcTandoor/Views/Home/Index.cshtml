@@ -1,0 +1,570 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<script src="Scripts/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+
+<script src="Scripts/jquery.gmap3.min.js"></script>
+<script src="Scripts/plugins.js"></script>
+<script src="Scripts/main.js"></script>
+<script src="Scripts/jquery-1.11.0.min.js"></script>
+
+<script src="Scripts/jquery.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="Scripts/SmoothScroll.js"></script>
+<script src="Scripts/bootstrap-carousel-swipe.js"></script>
+
+<script src="Scripts/jarallax.js"></script>
+<script src="Scripts/script.js"></script>
+<script src="Scripts/formoid.min.js"></script>
+
+@*<section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--transparent mbr-navbar--sticky mbr-navbar--auto-collapse" id="menu-5">
+        <div class="mbr-navbar__section mbr-section">
+            <div class="mbr-section__container container">
+                <div class="mbr-navbar__container">
+                    <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
+                        <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
+                            <span class="mbr-brand__logo"><a href="#top"><img src="images/png-flash-logo-198x65-47.png" class="mbr-navbar__brand-img mbr-brand__img" alt="Tandoor Restaurant"></a></span>
+
+                        </span>
+                    </div>
+                    <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
+                    <div class="mbr-navbar__column mbr-navbar__menu">
+                        <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
+                            <div class="mbr-navbar__column">
+                            <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active mbr-buttons--only-links"><li class="mbr-navbar__item">
+                                <a class="mbr-buttons__link btn text-warning" href="#top">HOME</a></li>
+                                 <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="https://mobirise.com">ABOUT</a></li>  <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="https://mobirise.com">SERVICE</a></li><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="https://mobirise.com">MENUS</a></li> <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="https://mobirise.com">ORDER ONLINE</a></li> <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="https://mobirise.com">RESERVATION</a></li> <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-warning" href="https://mobirise.com">CONTACT US</a></li></ul></div>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>*@
+
+<section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-4" style="background-color: rgb(255, 255, 255);">
+    <div class="mbr-section__container">
+        <div>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height active" style="background-image: url(images/back-image-1294x794-1.jpg);">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-center mbr-box__magnet--sm-padding mbr-after-navbar">
+                        <div class="mbr-overlay" style="opacity: 0.6;"></div>
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="mbr-hero">
+                                        <h1 class="mbr-hero__text">Delicious Cousine<br><br></h1>
+                                        <p class="mbr-hero__subtext"><strong>OPENING HOURS</strong><br><br>MONDAY - FRIDAY : 8:00 A.M - 23:00 P.M<br><br></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height" style="background-image: url(images/bg2-2000x1334-6.jpg);">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-center mbr-box__magnet--sm-padding mbr-after-navbar">
+
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <div class="mbr-hero">
+                                        <h1 class="mbr-hero__text">Everything<br><br></h1>
+                                        <p class="mbr-hero__subtext"><strong>MADE TO ORDER</strong></p>
+                                    </div>
+                                    <div class="mbr-buttons btn-inverse mbr-buttons--center"><a class="mbr-buttons__btn btn btn-lg btn-primary" href="https://mobirise.com">CALL US: 09 2<br>35 7851<br></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height" style="background-image: url(images/bg-2000x1334-78.jpg);">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-right mbr-box__magnet--sm-padding mbr-after-navbar">
+
+                        <div class="container">
+
+                            <div class="row">
+                                <div class="col-md-6 col-md-offset-5">
+                                    <div class="mbr-hero">
+                                        <h1 class="mbr-hero__text">The Real&nbsp;<br><br></h1>
+                                        <p class="mbr-hero__subtext"><strong>TASTE IS HERE</strong><br><strong><br></strong><br></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a data-app-prevent-settings="" class="left carousel-control" role="button" data-slide="prev" href="#slider-4">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a data-app-prevent-settings="" class="right carousel-control" role="button" data-slide="next" href="#slider-4">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+@*Menus*@
+
+@*<div class="container">
+    <div id="products-post">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="product-heading">
+                        <h2>MENUS ?</h2>
+                        <img src="images/under-heading.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filters col-md-12 col-xs-12">
+                    <ul id="filters" class="clearfix">
+                        <li><span class="filter" data-filter="all">All</span></li>
+                        <li><span class="filter" data-filter=".ginger">Ginger</span></li>
+                        <li><span class="filter" data-filter=".pizza">Pizza</span></li>
+                        <li><span class="filter" data-filter=".pasta">Pasta</span></li>
+                        <li><span class="filter" data-filter=".drink">Drink</span></li>
+                        <li><span class="filter" data-filter=".hamburger">Hamburger</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="Container">
+                <div class="col-md-3 col-sm-6 mix portfolio-item Pizza">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product1.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product1_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Vege Pizza</a></h3>
+                            <span class="text-category">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item ginger">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product2.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product2_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Ginger</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Ginger Tea</a></h3>
+                            <span class="text-category">$24.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item pizza">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product3.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product3_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Fresh Salad</a></h3>
+                            <span class="text-category">$12.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item pasta">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product4.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product4_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Pasta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Healthy Herbal Tea</a></h3>
+                            <span class="text-category">$8.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item drink">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product5.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product5_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Drink</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Fruit Salad</a></h3>
+                            <span class="text-category">$12.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item hamburger">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product6.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product6_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Hamburger</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Spicy Hamburger</a></h3>
+                            <span class="text-category">$7.50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item pizza">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product7.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product7_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Chocolate Cake</a></h3>
+                            <span class="text-category">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item pasta">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product8.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product8_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Pasta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Berry Taste</a></h3>
+                            <span class="text-category">$15.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item hamburger">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product3.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product3_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Hamburger</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Onion Grilled</a></h3>
+                            <span class="text-category">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item drink">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product2.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product2_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Drink</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Another Ginger</a></h3>
+                            <span class="text-category">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item ginger">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product1.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product1_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Ginger</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Mocha Coffee</a></h3>
+                            <span class="text-category">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mix portfolio-item pasta">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-thumb">
+                            <img src="images/product6.jpg" alt="" />
+                            <div class="hover">
+                                <div class="hover-iner">
+                                    <a class="fancybox" href="images/product6_big.jpg"><img src="images/open-icon.png" alt="" /></a>
+                                    <span>Pasta</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="label-text">
+                            <h3><a href="single-post.html">Dessert Time</a></h3>
+                            <span class="text-category">$16.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="pagination">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul>
+                                <li><a href="#">Previous</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>*@
+    @*Reservation*@
+    <div class="container-fluid book section-container" id="reservation">
+        <div class="row" style="text-align:center">
+            <div class="col-md-8 col-md-offset-2 bookhead">
+                <fieldset>
+                    <legend class="text-center header">Book Your Table</legend>
+                </fieldset>
+            </div>
+            <div class="col-md-8 col-md-offset-2 opening">
+                <h4>Opening Hours</h4>
+                <p>Sunday to Monday 09.00 - 24:00 & Friday and Sunday 08:00 - 03.00</p>
+                <p class="call">Phone: 09 235 7851</p>
+            </div>
+            <div class="col-md-8 col-md-offset-3 col-sm-10 col-sm-offset-1 forming">
+                <form role="form">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="date" placeholder="Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="time" class="form-control" id="time" placeholder="Time">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="party" placeholder="Party">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" placeholder="Message" rows="8"></textarea>
+                        </div>
+                        <div class="text-left">
+                            <button type="submit" class="mbr-buttons__btn btn btn-lg btn-success">Book Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @* End Reservation*@
+
+    @* Contact us*@
+    <div class="container" id="contacts1-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header">Contact us</legend>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you." rows="7"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .header {
+            color: #36A0FF;
+            font-size: 27px;
+            padding: 10px;
+        }
+
+        .bigicon {
+            font-size: 35px;
+            color: #36A0FF;
+        }
+    </style>
+
+    @*<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form1-4" style="background-color: rgb(193, 193, 193);">
+
+            <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 43px; padding-bottom: 43px;">
+                <div class="row" style="text-align:center">
+                    <div class="col-sm-12" style="text-align:center">
+                        <div class="row">
+                            <div class="col-sm-12" data-form-type="formoid">
+                                <div >
+                                    <h4>CONTACT US</h4>
+                                </div>
+                                <div data-form-alert="true">
+                                    <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
+                                </div>
+                                <form action="https:" method="post" data-form-title="CONTACT FORM">
+                                    <input type="hidden" value="b04uxDVB031B8J/vC3XeKx5wXOYC16uybJTUtFJrYxrNADllEfzL6XrDmBIdyakJfxPIUHXndOoTPA5UzBksUha6M1/q6CfTASb3YtoGCyd8ILjs9LoioP4Y3iEZiLjb" data-form-email="true">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" required="" placeholder="Name*" data-form-field="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" required="" placeholder="Email*" data-form-field="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" rows="7" placeholder="Message" data-form-field="Message"></textarea>
+                                    </div>
+                                    <div class="mbr-buttons mbr-buttons--center"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-success">SEND</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    <figure class="mbr-figure mbr-figure--wysiwyg mbr-figure--full-width mbr-figure--caption-outside-bottom" id="map1-4">
+        <div class="mbr-figure__map mbr-google-map">
+            <p class="mbr-google-map__marker" data-coordinates="-37.2479663,174.7344961">Tandoor Restaurant &amp; Takeaway</p>
+        </div>
+    </figure>
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size mbr-parallax-background" style="background-image: url(images/bg3.jpg);">
+        <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(60, 60, 60);"></div>
+        <div class="mbr-section__container container">
+            <div class="mbr-contacts mbr-contacts--wysiwyg row" style="padding-top: 45px; padding-bottom: 45px;">
+                <div class="col-sm-4">
+                    <div><a href="#top"><img src="images/png-flash-logo-198x65-12.png" class="mbr-contacts__img mbr-contacts__img--left"></a></div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="mbr-contacts__text">
+                                <strong>ADDRESS</strong><br>35 Street Kitchener Rd<br>
+                                Waiuku, New Zealand
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="mbr-contacts__text">
+                                <strong>CONTACT US</strong><br>
+                                Email: tandoor@gmail.com<br>Phone: 09 235 7851<br>
+                            </p>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @*<footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-5" style="background-color: rgb(68, 68, 68);">
+
+            <div class="mbr-section__container container">
+                <div class="mbr-footer mbr-footer--wysiwyg row" style="padding-top: 36.900000000000006px; padding-bottom: 24.6px;">
+                    <div class="col-sm-12">
+                        <p class="mbr-footer__copyright">Copyright (c) 2016 Tandoor Restaurant&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </footer>*@
+
+    <!--[if lte IE 9]>
+      <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+
+
